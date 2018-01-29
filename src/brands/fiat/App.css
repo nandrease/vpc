@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'ApexNewWeb-Light';
+  src: url('~/fonts/gillsans-regular-webfont.woff2') format('woff2'),
+       url('~/fonts/gillsans-regular-webfont.woff') format('woff'),
+       url('~/fonts/GillSans.ttf') format('truetype');
+}
+
+/*
+#e70000 - Primary
+#e70000 - Primary active
+#000000 - Primary hover
+
+#e70000 - Secondary
+#e70000 - Secondary active
+#000000 - Secondary hover
+
+#f02222 - error
+#bfbfbf - line
+
+#000000 (0.5 opacity) - overlay
+#e7e7e7 - secondary bg
+
+#e7e7e7 - BottomBar
+
+#000000 - primary text
+#636363 - secondary text
+
+GillSans - Button and main header font
+*/
+
+.fiat .btn-primary{
+  background: #e70000;
+  border: 1px solid #e70000;
+  color: #fff;
+	text-align: center;
+  outline: none;
+}
+.fiat .color-info:after {
+    content: '';
+    background-image: url('/icon-information-fiat.svg');
+    background-size: contain;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+}
+
+.fiat .btn-primary:active, .fiat .btn-primary:not([disabled]):not(.disabled):active{
+  background: #e70000;
+  border: 1px solid #e70000;
+}
+.fiat .btn-primary:hover, .fiat .btn-primary:not([disabled]):not(.disabled):hover{
+  background: #000000;
+  border: 1px solid #000000;
+}
+.fiat .headerRow .btn-primary:hover, .fiat  .headerRow .btn-primary:not([disabled]):not(.disabled):hover{
+  background: #e70000;
+  border: 1px solid #e70000;
+}
+
+.fiat .btn-secondary{
+  background: transparent;
+  border: 1px solid #e70000;
+  color: #e70000;
+}
+.fiat .btn-secondary:active, .fiat .btn-secondary:not([disabled]):not(.disabled):active{
+  background: #e70000;
+  border: 1px solid #e70000;
+  color: #fff;
+}
+.fiat .btn-secondary:hover, .fiat .btn-secondary:not([disabled]):not(.disabled):hover{
+  background: #000000;
+  border: 1px solid #000000;
+  color: #fff;
+}
+/* HeaderRow */
+.fiat .main-header, .fiat .btn{
+  font-family: GillSans;
+}
+.alfaromeo .color-info{color:#e70000;}

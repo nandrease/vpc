@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>information icon DESKTOP</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Styling_01_FCA_PriceCal_DESIGN_Chrysler" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1047.000000, -192.000000)">
+        <g id="FORM-FIELDS" transform="translate(0.000000, 152.000000)">
+            <g id="label" transform="translate(879.000000, 39.000000)">
+                <g id="Chrysler-/-Icon-/-Info-/-Desktop" transform="translate(168.000000, 1.000000)">
+                    <g id="information-icon-copy">
+                        <circle id="Oval" fill="#3A57A0" cx="9" cy="9" r="9"></circle>
+                        <text id="label-copy" font-family="Roboto-Bold, Roboto" font-size="14" font-weight="bold" fill="#FFFFFF">
+                            <tspan x="7.19999981" y="14">i</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

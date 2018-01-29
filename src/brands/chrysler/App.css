@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Novecentowide';
+  src: url('~/fonts/novecentowide-normal-webfont.woff') format('woff'),
+       url('~/fonts/novecentowide-normal-webfont.woff2') format('woff2'),
+       url('~/fonts/Novecentowide-Normal.otf') format('otf');
+}
+
+/*
+#3a57a0 - Primary
+#3a57a0 - Primary active
+#253b74 - Primary hover
+
+#3a57a0 - Secondary
+#3a57a0 - Secondary active
+#253b74 - Secondary hover
+
+#f02222 - error
+#bfbfbf - line
+
+#253b74 (0.5 opacity) - overlay
+#e7e7e7 - secondary bg
+
+#e7e7e7 - BottomBar
+
+#253b74 - primary text
+#636363 - secondary text
+
+ApexNewWeb-Light - Button and main header font
+*/
+
+.chrysler .btn-primary{
+  background: #3a57a0;
+  border: 1px solid #3a57a0;
+  color: #fff;
+	text-align: center;
+  outline: none;
+}
+.chrysler .color-info:after {
+    content: '';
+    background-image: url('/icon-information-chrysler.svg');
+    background-size: contain;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+}
+
+.chrysler .btn-primary:active, .chrysler .btn-primary:not([disabled]):not(.disabled):active{
+  background: #3a57a0;
+  border: 1px solid #3a57a0;
+}
+.chrysler .btn-primary:hover, .chrysler .btn-primary:not([disabled]):not(.disabled):hover{
+  background: #253b74;
+  border: 1px solid #253b74;
+}
+
+.chrysler .btn-secondary{
+  background: transparent;
+  border: 1px solid #3a57a0;
+  color: #3a57a0;
+}
+.chrysler .btn-secondary:active, .chrysler .btn-secondary:not([disabled]):not(.disabled):active{
+  background: #3a57a0;
+  border: 1px solid #3a57a0;
+  color: #fff;
+}
+.chrysler .btn-secondary:hover, .chrysler .btn-secondary:not([disabled]):not(.disabled):hover{
+  background: #253b74;
+  border: 1px solid #253b74;
+  color: #fff;
+}
+/* HeaderRow */
+.chrysler .main-header, .chrysler .btn{
+  font-family: Novecentowide;
+}
+.alfaromeo .color-info{color:#3a57a0;}

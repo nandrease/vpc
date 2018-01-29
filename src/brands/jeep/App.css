@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('~/fonts/proximanova-bold-webfont.woff') format('woff'),
+       url('~/fonts/proximanova-bold-webfont.woff') format('woff');
+}
+
+/*
+#ffba00 - Primary
+#edad01 - Primary active
+#edad01 - Primary hover
+
+#ffba00 - Secondary
+#ffba00 - Secondary active
+#edad01 - Secondary hover
+
+#f02222 - error
+#bfbfbf - line
+
+#edad01 (0.5 opacity) - overlay
+#e7e7e7 - secondary bg
+
+#e7e7e7 - BottomBar
+
+#edad01 - primary text
+#636363 - secondary text
+
+ApexNewWeb-Light - Button and main header font
+*/
+
+.jeep .btn-primary{
+  background: #ffba00;
+  border: 1px solid #ffba00;
+  color: #000;
+	text-align: center;
+  outline: none;
+}
+.jeep .color-info:after {
+    content: '';
+    background-image: url('/icon-information-jeep.svg');
+    background-size: contain;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+}
+
+.jeep .btn-primary:active, .jeep .btn-primary:not([disabled]):not(.disabled):active{
+  background: #edad01;
+  border: 1px solid #edad01;
+  color: #000;
+}
+.jeep .btn-primary:hover, .jeep .btn-primary:not([disabled]):not(.disabled):hover{
+  background: #edad01;
+  border: 1px solid #edad01;
+  color: #000;
+}
+
+.jeep .btn-secondary{
+  background: transparent;
+  border: 1px solid #ffba00;
+  color: #000;
+}
+.jeep .btn-secondary:active, .jeep .btn-secondary:not([disabled]):not(.disabled):active{
+  background: #edad01;
+  border: 1px solid #edad01;
+  color: #000;
+}
+.jeep .btn-secondary:hover, .jeep .btn-secondary:not([disabled]):not(.disabled):hover{
+  background: #edad01;
+  border: 1px solid #edad01;
+  color: #000;
+}
+/* HeaderRow */
+.jeep .main-header, .jeep .btn{
+  font-family: ProximaNova;
+}
+.alfaromeo .color-info{color:#ffba00;}

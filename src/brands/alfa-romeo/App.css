@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'ApexNewWeb-Light';
+  src: url('~/fonts/ApexNewWeb-Light.woff') format('woff'),
+       url('~/fonts/ApexNewWeb-Light.eot') format('eot');
+}
+
+/*
+#8f0c2c - Primary
+#8f0c2c - Primary active
+#7b061b - Primary hover
+
+#8f0c2c - Secondary
+#8f0c2c - Secondary active
+#7b061b - Secondary hover
+
+#e7e7e7 - BottomBar
+
+ApexNewWeb-Light - Button and main header font
+*/
+
+.alfaromeo .btn-primary{
+  background: #8f0c2c;
+  border: 1px solid #8f0c2c;
+  color: #fff;
+	text-align: center;
+  outline: none;
+}
+
+.alfaromeo .btn-primary:active, .alfaromeo .btn-primary:not([disabled]):not(.disabled):active{
+  background: #8f0c2c;
+  border: 1px solid #8f0c2c;
+}
+.alfaromeo .btn-primary:hover, .alfaromeo .btn-primary:not([disabled]):not(.disabled):hover{
+  background: #7b061b;
+  border: 1px solid #7b061b;
+}
+
+.alfaromeo .btn-secondary{
+  background: transparent;
+  border: 1px solid #8f0c2c;
+  color: #8f0c2c;
+}
+.alfaromeo .btn-secondary:active, .alfaromeo .btn-secondary:not([disabled]):not(.disabled):active{
+  background: #8f0c2c;
+  border: 1px solid #8f0c2c;
+  color: #fff;
+}
+.alfaromeo .btn-secondary:hover, .alfaromeo .btn-secondary:not([disabled]):not(.disabled):hover{
+  background: #7b061b;
+  border: 1px solid #7b061b;
+  color: #fff;
+}
+/* HeaderRow */
+.alfaromeo .main-header{
+  font-family: ApexNewWeb-Light;
+}
+.alfaromeo .color-info:after {
+    content: '';
+    background-image: url('/icon-information-alfa-romeo.svg');
+    background-size: contain;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+}

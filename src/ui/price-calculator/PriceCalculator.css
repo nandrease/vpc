@@ -1,0 +1,198 @@
+.main{
+  padding-top: 90px;
+  padding-bottom: 90px;
+  font-size: 14px;
+}
+.bodyComponent .image-price-row>div{padding-top:20px;padding-bottom:20px;}
+.bodyComponent .dealer>.panel-heading, .bodyComponent .highlights>.panel-heading{padding-bottom:10px;}
+.btn{
+  border-radius: 0;
+  padding: 10px 0;
+  width: 270px;
+  max-width: 100%;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: ApexNewWeb-Light;
+}
+.btn:focus, .btn:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.fullwidth-sm{
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.form-control:focus{border-color:#fff;}
+.header-form .btn{text-transform: uppercase;padding-left:0;padding-right:0;text-align: center;}
+.header-form .error, .header-form .warning{position:relative;font-size:12px;margin-top:5px;font-family:"Roboto Bold"; white-space: nowrap;}
+.header-form .error:before{content: "\E965";font-family: 'icomoon' !important;speak: none;line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+.header-form .has-error{border: 1px solid #f02222;}
+.header-form select.form-control:not([size]):not([multiple]), .header-form input.form-control{height: 46px;}
+.text-danger{color: #f02222;}
+.text-danger .cheveron-icon:after {
+    content: '';
+    background-image: url('/icon-information-jeep.svg');
+    background-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.header-form select {
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  background: url('/chevron.svg') no-repeat top 50% right 10px white;
+}
+.header-form select {
+    appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+}
+
+.main .panel-title{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/*Header*/
+.headerRow .btn[type=submit]{
+  width: 100%;
+}
+.headerRow label{
+  font-family: "Roboto Bold";
+	font-size: 16px;
+  font-weight: normal;
+}
+
+/* BodyComponent layout */
+.image-price-row{
+  margin-bottom: 30px;
+}
+.image-price-row .vechiclePriceBlock{
+
+}
+.vechiclePriceBlock .modelName{
+  font-family: "Roboto Bold";
+  font-size: 30px;
+}
+.vechiclePriceBlock .modelDetails{
+  font-family: Roboto;
+  font-size: 20px;
+}
+.vechiclePriceBlock .modelPrice{
+  font-family: Roboto;
+  font-size: 46px;
+  margin-bottom: 30px;
+}
+.bottomBar .btn{
+  margin: 5px;
+}
+
+.bottomBar{
+  padding: 45px 0;
+  background: #e7e7e7;
+}
+/*Dealer and Model Highliths*/
+.panel-body h4{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Roboto Bold";
+  margin-bottom: 6px;
+}
+.panel-body h3{
+  font-size: 30px;
+  font-family: "Roboto";
+  margin-bottom: 20px;
+}
+.dealer-title, .highlights-title{margin-top:0;}
+
+.pageDisclaimer, .priceDisclaimer{
+  font-size: 12px;
+	font-style: italic;
+	color: #505050;
+}
+.priceDisclaimer{margin-top: 30px;}
+.pageDisclaimer{margin-top: 60px;}
+.imageDisclaimer{
+	text-align: right;
+  margin-top:75px;
+}
+
+/*General*/
+.border-line{
+  border-bottom: solid 1px #bfbfbf;
+}
+.panel-body{
+  padding: 28px 0;
+}
+.panel-body>.well.well-sm{
+  margin-bottom: 20px;
+}
+ul.highlights-list{padding-left:20px;font-size: 0.5em;}
+ul>li{
+  font-size: 14px;
+  margin-top: .7142rem;
+}
+.panel-body h1, .panel-body h2, .panel-body h3, .panel-body h4, .panel-body h5, .panel-body h6{margin-bottom: 15px}
+
+@media (min-width: 1200px) {
+    .autosize-lg {
+        max-width: auto;
+        -ms-flex: initial;
+        flex: initial;
+        padding: 0 0 0 5px;
+        float:left;
+        width:auto;
+    }
+    .autosize-lg:first-child{padding:0;}
+    .container {
+      max-width: 1170px;
+    }
+    .header-form .error, .header-form .warning{position:absolute;}
+    .headerRow .btn[type=submit]{margin-top:28px;}
+}
+@media (max-width: 1200px){
+  .autosize-lg > div {width:100% !important;}
+  .autosize-lg{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .autosize-lg.color-form-group>div{width: 90%;width: calc(100% - 40px) !important;}
+  .autosize-lg.color-form-group .color-info{padding-left:2px;}
+  .autosize-lg.color-form-group .color-info:after{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    right:20px;
+    top: 35px;
+  }
+  .header-form input.form-control{width: auto;}
+  .header-form{width:482px; margin: 0 auto;max-width:100%;}
+}
+@media (max-width: 992px){
+  .bottomBar{padding:16px;}
+  .headerRow{padding: 33px 0px;}
+  .btn, .bottomBar .btn{width: 480px;margin:5px auto;display:block;}
+  .bodyComponent .image-price-row{padding-bottom:40px;}
+  .image-price-row, .image-price-row .imageDisclaimer{text-align:center;}
+}
+@media  (min-width: 767px) and (max-width: 1200px){
+  .split-md{float:left;width:50%;}
+  ul.highlights-list>li{
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (max-width: 767px){
+  .main{padding:40px 0;}
+}
