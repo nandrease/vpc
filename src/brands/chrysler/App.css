@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Novecentowide';
-  src: url('~/fonts/novecentowide-normal-webfont.woff') format('woff'),
-       url('~/fonts/novecentowide-normal-webfont.woff2') format('woff2'),
-       url('~/fonts/Novecentowide-Normal.otf') format('otf');
+  src: url('../../fonts/novecentowide-normal-webfont.woff') format('woff'),
+       url('../../fonts/novecentowide-normal-webfont.woff2') format('woff2'),
+       url('../../fonts/Novecentowide-Normal.otf') format('otf');
 }
 
 /*
@@ -35,14 +35,7 @@ ApexNewWeb-Light - Button and main header font
 	text-align: center;
   outline: none;
 }
-.chrysler .color-info:after {
-    content: '';
-    background-image: url('/icon-information-chrysler.svg');
-    background-size: contain;
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-}
+
 
 .chrysler .btn-primary:active, .chrysler .btn-primary:not([disabled]):not(.disabled):active{
   background: #3a57a0;
@@ -72,4 +65,9 @@ ApexNewWeb-Light - Button and main header font
 .chrysler .main-header, .chrysler .btn{
   font-family: Novecentowide;
 }
-.alfaromeo .color-info{color:#3a57a0;}
+
+.chrysler .colorInformationsvg circle {
+    fill : #3a57a0;
+}
+
+.chrysler { width: 100% }

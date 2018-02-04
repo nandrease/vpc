@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'ApexNewWeb-Light';
-  src: url('~/fonts/gillsans-regular-webfont.woff2') format('woff2'),
-       url('~/fonts/gillsans-regular-webfont.woff') format('woff'),
-       url('~/fonts/GillSans.ttf') format('truetype');
+  src: url('../../fonts/gillsans-regular-webfont.woff2') format('woff2'),
+       url('../../fonts/gillsans-regular-webfont.woff') format('woff'),
+       url('../../fonts/GillSans.ttf') format('truetype');
 }
 
 /*
@@ -35,14 +35,7 @@ GillSans - Button and main header font
 	text-align: center;
   outline: none;
 }
-.fiat .color-info:after {
-    content: '';
-    background-image: url('/icon-information-fiat.svg');
-    background-size: contain;
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-}
+
 
 .fiat .btn-primary:active, .fiat .btn-primary:not([disabled]):not(.disabled):active{
   background: #e70000;
@@ -76,4 +69,9 @@ GillSans - Button and main header font
 .fiat .main-header, .fiat .btn{
   font-family: GillSans;
 }
-.alfaromeo .color-info{color:#e70000;}
+
+.colorInformationsvg circle {
+    fill : #e70000;
+}
+
+.fiat { width : 100% }

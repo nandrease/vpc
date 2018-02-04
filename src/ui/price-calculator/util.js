@@ -1,14 +1,20 @@
-const formatPrice = (amount) => {
-    const formatter = Intl.NumberFormat('en-AU', {
-        style: 'currency',
-        currency: 'AUD',
-        minimumFractionDigits: 2,
-    });
+const formatPrice = (amount, prefix = "", postfix = "") => {
+    if(amount && amount > 0){
+        const formatter = Intl.NumberFormat("en-AU", {
+            style: "currency",
+            currency: "AUD",
+            minimumFractionDigits : 0,
+            maximumFractionDigits: 0,
+        });
 
-    return formatter.format(amount)
-}
+        return prefix + formatter.format(amount) + postfix;
+    }
+    else{
+        return "";
+    }
+};
 
 
 export {
     formatPrice
-}
+};

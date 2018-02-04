@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
-import './App.css';
+import React, {Component} from "react";
+import "./App.css";
 import {Field, reduxForm} from "redux-form";
+import PropTypes from "prop-types";
 
 const brands = {
     options : [
@@ -11,15 +12,18 @@ const brands = {
     ]
 };
 
-const SelectComponent = props => {
+const SelectComponent = ({input: {onChange}, name}) => {
 
-    const {input: {onChange}, name} = props;
     return (
         <select id="brand" className="form-control" onChange={onChange} name={name}>
             <option value="select">Select</option>
-            {brands.options.map(i => { return <option value={i.value}>{i.name}</option>   } )  }
+            {brands.options.map((e,i) => { return <option key={i} value={e.value}>{e.name}</option>;   } )  }
         </select>
-    )
+    );
+};
+
+SelectComponent.propTypes = {
+    name : PropTypes.string.isRequired
 };
 
 let BrandForm = props => {
@@ -31,10 +35,13 @@ let BrandForm = props => {
             <Field component={SelectComponent} name={"brand"}/>
         </form>
 
-    )
+    );
 };
 
-BrandForm = reduxForm({form: 'brand' , destroyOnUnmount : false })(BrandForm);
+BrandForm.propTypes = {
+};
+
+BrandForm = reduxForm({form: "brand" , destroyOnUnmount : false })(BrandForm);
 
 class App extends Component {
 
@@ -44,13 +51,12 @@ class App extends Component {
                 <div className="text-center">Please choose brand name</div>
                 <BrandForm
                     onChange={(values) => {
-                        this.props.history.push(`/vpc/${values.brand}`)
+                        this.props.history.push(`/vpc/${values.brand}`);
                     }}
                 />
             </div>
-        )
+        );
     }
 }
-
 
 export default App;

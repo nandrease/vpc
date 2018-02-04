@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'ApexNewWeb-Light';
-  src: url('~/fonts/ApexNewWeb-Light.woff') format('woff'),
-       url('~/fonts/ApexNewWeb-Light.eot') format('eot');
+  src: url('../../fonts/ApexNewWeb-Light.woff') format('woff'),
+       url('../../fonts/ApexNewWeb-Light.eot') format('eot');
 }
 
 /*
@@ -52,13 +52,21 @@ ApexNewWeb-Light - Button and main header font
 }
 /* HeaderRow */
 .alfaromeo .main-header{
-  font-family: ApexNewWeb-Light;
+    font-family: ApexNewWeb-Light, serif;
 }
-.alfaromeo .color-info:after {
-    content: '';
-    background-image: url('/icon-information-alfa-romeo.svg');
-    background-size: contain;
-    display: inline-block;
-    width: 17px;
-    height: 17px;
+
+
+.alfaromeo .color-info {
+    font-family: Roboto, serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.alfaromeo .colorInformationsvg circle {
+    fill : #8F0C25;
+}
+
+.alfaromeo {
+    width:100%;
 }

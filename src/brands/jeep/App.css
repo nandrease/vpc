@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'ProximaNova';
-  src: url('~/fonts/proximanova-bold-webfont.woff') format('woff'),
-       url('~/fonts/proximanova-bold-webfont.woff') format('woff');
+  src: url('../../fonts/proximanova-bold-webfont.woff') format('woff'),
+       url('../../fonts/proximanova-bold-webfont.woff') format('woff');
 }
 
 /*
@@ -34,14 +34,7 @@ ApexNewWeb-Light - Button and main header font
 	text-align: center;
   outline: none;
 }
-.jeep .color-info:after {
-    content: '';
-    background-image: url('/icon-information-jeep.svg');
-    background-size: contain;
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-}
+
 
 .jeep .btn-primary:active, .jeep .btn-primary:not([disabled]):not(.disabled):active{
   background: #edad01;
@@ -73,4 +66,9 @@ ApexNewWeb-Light - Button and main header font
 .jeep .main-header, .jeep .btn{
   font-family: ProximaNova;
 }
-.alfaromeo .color-info{color:#ffba00;}
+
+.jeep .colorInformationsvg circle {
+    fill : #ffba00;
+}
+
+.jeep {  width : 100% }

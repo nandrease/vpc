@@ -53,7 +53,7 @@ const data = [
                 "price_type": "normal",
                 "dealer_delivery": 2995,
                 "vehicle_price": 25790,
-                "government charges":
+                "government_charges":
                     {
                         "stamp_duty": 864,
                         "luxury_car_tax": 0,
@@ -84,10 +84,10 @@ const data = [
                 "manager_name": null,
                 "address1": "1 Link Road"
             }]
-    }]
+    }];
 
-const loadData = (modelId) => {
-    return Promise.resolve(data[0])
+const loadData = () => {
+    return Promise.resolve(data[0]);
 };
 
 export default loadData;

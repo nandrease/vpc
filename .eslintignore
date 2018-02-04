@@ -1,0 +1,4 @@
+build/static/js/**
+src/registerServiceWorker.js
+**/*.test.js
+config/

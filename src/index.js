@@ -1,20 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {combineReducers, createStore} from 'redux';
-import {HashRouter, Route, Switch} from 'react-router-dom';
-import {Provider} from 'react-redux';
-import registerServiceWorker from './registerServiceWorker';
-import account from './reducers';
-import './index.css';
-import App from './brands/App';
-import AlfaRomeoApp from './brands/alfa-romeo/App';
-import FiatApp from './brands/fiat/App';
-import JeepApp from './brands/jeep/App';
-import ChryslerApp from './brands/chrysler/App';
+import React from "react";
+import ReactDOM from "react-dom";
+import {combineReducers, createStore} from "redux";
+import {HashRouter, Route, Switch} from "react-router-dom";
+import {Provider} from "react-redux";
+import registerServiceWorker from "./registerServiceWorker";
+import "./index.css";
+import App from "./brands/App";
+import AlfaRomeoApp from "./brands/alfa-romeo/App";
+import FiatApp from "./brands/fiat/App";
+import JeepApp from "./brands/jeep/App";
+import ChryslerApp from "./brands/chrysler/App";
 import {reducer as formReducer} from "redux-form";
 
 const rootReducer = combineReducers({
-    account,
     form : formReducer,
 });
 
@@ -29,27 +27,25 @@ window.store = store;
 
 const brands = {
     alfa: {
-        value: 'alfaromeo',
-        id: 7,
-        division : '7'
+        value: "alfaromeo",
+        id: [7],
+        division : "7"
     },
     chrysler: {
-        value: 'chrysler',
-        id: 3,
-        division : '9'
+        value: "chrysler",
+        id: [3],
+        division : "9"
     },
     fiat: {
-        value: 'fiat',
-        id: 8
-
+        value: "fiat",
+        id: [8],
+        division : "2"
     },
     jeep: {
-        value: 'jeep',
-        id: 1,
-        division : '1'
+        value: "jeep",
+        id: [1],
+        division : "1"
     }
-
-
 };
 
 ReactDOM.render(
@@ -64,5 +60,5 @@ ReactDOM.render(
             </Switch>
         </HashRouter>
     </Provider>
-    , document.getElementById('root'));
+    , document.getElementById("root"));
 registerServiceWorker();
