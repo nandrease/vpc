@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import FiatApp from './App';
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<FiatApp />, div);
+    const div = document.createElement('div');
+    ReactDOM.render(<FiatApp />, div);
 });

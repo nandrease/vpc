@@ -1,48 +1,60 @@
-import React from "react";
-import {Panel} from "react-bootstrap";
-import "./info-panel.css";
-import PropTypes from "prop-types";
-import {connect} from "react-redux";
-import {change} from "redux-form";
+import React from 'react';
+import { Panel } from 'react-bootstrap';
+import './info-panel.css';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { change } from 'redux-form';
 
 class PanelInstance extends React.Component {
-
-    constructor(props){
+    constructor(props) {
         super();
         this.state = {
-            active : props.active,
+            active: props.active
         };
     }
 
     componentWillReceiveProps = (nextProps) => {
-        this.setState({active:nextProps.active});
-        document.body.classList.toggle("noscroll" , nextProps.active);
+        this.setState({ active: nextProps.active });
+        document.body.classList.toggle('noscroll', nextProps.active);
     };
 
     render = () => {
-        const sidebar  = {
-            position: "right",
-            panelWidth: "420px",
+        const sidebar = {
+            position: 'right',
+            panelWidth: '420px'
         };
         return (
-            <section className={"open-panel " + (this.state.active ? "show" : "hide") } onClick={() => { this.props.dispatch(change(this.props.formKey , "active" , false )); }}>
-                <Panel className={"info-panel " + sidebar.position} style={{maxWidth: sidebar.panelWidth}}>
-                    <Panel.Heading>{this.props["title"]}
-                        <span className="close-icon" onClick={() => { this.props.dispatch(change(this.props.formKey , "active" , false )); }} aria-label="Close" aria-hidden="true">&times;</span>
+            <section
+                className={'open-panel ' + (this.state.active ? 'show' : 'hide')}
+                onClick={() => {
+                    this.props.dispatch(change(this.props.formKey, 'active', false));
+                }}
+            >
+                <Panel className={'info-panel ' + sidebar.position} style={{ maxWidth: sidebar.panelWidth }}>
+                    <Panel.Heading>
+                        {this.props['title']}
+                        <span
+                            className="close-icon"
+                            onClick={() => {
+                                this.props.dispatch(change(this.props.formKey, 'active', false));
+                            }}
+                            aria-label="Close"
+                            aria-hidden="true"
+                        >
+                            &times;
+                        </span>
                     </Panel.Heading>
-                    <Panel.Body>
-                        {this.props.children}
-                    </Panel.Body>
+                    <Panel.Body>{this.props.children}</Panel.Body>
                 </Panel>
             </section>
         );
-    }
+    };
 }
 
 PanelInstance.propTypes = {
-    active : PropTypes.bool,
-    title : PropTypes.string,
-    formKey : PropTypes.string
+    active: PropTypes.bool,
+    title: PropTypes.string,
+    formKey: PropTypes.string
 };
 
 PanelInstance = connect()(PanelInstance);

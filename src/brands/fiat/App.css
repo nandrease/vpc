@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'ApexNewWeb-Light';
-  src: url('../../fonts/gillsans-regular-webfont.woff2') format('woff2'),
-       url('../../fonts/gillsans-regular-webfont.woff') format('woff'),
-       url('../../fonts/GillSans.ttf') format('truetype');
+	font-family: 'ApexNewWeb-Light';
+	src: url('../../fonts/gillsans-regular-webfont.woff2') format('woff2'),
+		url('../../fonts/gillsans-regular-webfont.woff') format('woff'),
+		url('../../fonts/GillSans.ttf') format('truetype');
 }
 
 /*
@@ -28,50 +28,57 @@
 GillSans - Button and main header font
 */
 
-.fiat .btn-primary{
-  background: #e70000;
-  border: 1px solid #e70000;
-  color: #fff;
+.fiat .btn-primary {
+	background: #e70000;
+	border: 1px solid #e70000;
+	color: #fff;
 	text-align: center;
-  outline: none;
+	outline: none;
 }
 
+.fiat .btn-primary:active,
+.fiat .btn-primary:not([disabled]):not(.disabled):active {
+	background: #e70000;
+	border: 1px solid #e70000;
+}
+.fiat .btn-primary:hover,
+.fiat .btn-primary:not([disabled]):not(.disabled):hover {
+	background: #000000;
+	border: 1px solid #000000;
+}
+.fiat .headerRow .btn-primary:hover,
+.fiat .headerRow .btn-primary:not([disabled]):not(.disabled):hover {
+	background: #e70000;
+	border: 1px solid #e70000;
+}
 
-.fiat .btn-primary:active, .fiat .btn-primary:not([disabled]):not(.disabled):active{
-  background: #e70000;
-  border: 1px solid #e70000;
+.fiat .btn-secondary {
+	background: transparent;
+	border: 1px solid #e70000;
+	color: #e70000;
 }
-.fiat .btn-primary:hover, .fiat .btn-primary:not([disabled]):not(.disabled):hover{
-  background: #000000;
-  border: 1px solid #000000;
+.fiat .btn-secondary:active,
+.fiat .btn-secondary:not([disabled]):not(.disabled):active {
+	background: #e70000;
+	border: 1px solid #e70000;
+	color: #fff;
 }
-.fiat .headerRow .btn-primary:hover, .fiat  .headerRow .btn-primary:not([disabled]):not(.disabled):hover{
-  background: #e70000;
-  border: 1px solid #e70000;
-}
-
-.fiat .btn-secondary{
-  background: transparent;
-  border: 1px solid #e70000;
-  color: #e70000;
-}
-.fiat .btn-secondary:active, .fiat .btn-secondary:not([disabled]):not(.disabled):active{
-  background: #e70000;
-  border: 1px solid #e70000;
-  color: #fff;
-}
-.fiat .btn-secondary:hover, .fiat .btn-secondary:not([disabled]):not(.disabled):hover{
-  background: #000000;
-  border: 1px solid #000000;
-  color: #fff;
+.fiat .btn-secondary:hover,
+.fiat .btn-secondary:not([disabled]):not(.disabled):hover {
+	background: #000000;
+	border: 1px solid #000000;
+	color: #fff;
 }
 /* HeaderRow */
-.fiat .main-header, .fiat .btn{
-  font-family: GillSans;
+.fiat .main-header,
+.fiat .btn {
+	font-family: GillSans;
 }
 
 .colorInformationsvg circle {
-    fill : #e70000;
+	fill: #e70000;
 }
 
-.fiat { width : 100% }
+.fiat {
+	width: 100%;
+}

@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'ProximaNova';
-  src: url('../../fonts/proximanova-bold-webfont.woff') format('woff'),
-       url('../../fonts/proximanova-bold-webfont.woff') format('woff');
+	font-family: 'ProximaNova';
+	src: url('../../fonts/proximanova-bold-webfont.woff') format('woff'),
+		url('../../fonts/proximanova-bold-webfont.woff') format('woff');
 }
 
 /*
@@ -27,48 +27,54 @@
 ApexNewWeb-Light - Button and main header font
 */
 
-.jeep .btn-primary{
-  background: #ffba00;
-  border: 1px solid #ffba00;
-  color: #000;
+.jeep .btn-primary {
+	background: #ffba00;
+	border: 1px solid #ffba00;
+	color: #000;
 	text-align: center;
-  outline: none;
+	outline: none;
 }
 
+.jeep .btn-primary:active,
+.jeep .btn-primary:not([disabled]):not(.disabled):active {
+	background: #edad01;
+	border: 1px solid #edad01;
+	color: #000;
+}
+.jeep .btn-primary:hover,
+.jeep .btn-primary:not([disabled]):not(.disabled):hover {
+	background: #edad01;
+	border: 1px solid #edad01;
+	color: #000;
+}
 
-.jeep .btn-primary:active, .jeep .btn-primary:not([disabled]):not(.disabled):active{
-  background: #edad01;
-  border: 1px solid #edad01;
-  color: #000;
+.jeep .btn-secondary {
+	background: transparent;
+	border: 1px solid #ffba00;
+	color: #000;
 }
-.jeep .btn-primary:hover, .jeep .btn-primary:not([disabled]):not(.disabled):hover{
-  background: #edad01;
-  border: 1px solid #edad01;
-  color: #000;
+.jeep .btn-secondary:active,
+.jeep .btn-secondary:not([disabled]):not(.disabled):active {
+	background: #edad01;
+	border: 1px solid #edad01;
+	color: #000;
 }
-
-.jeep .btn-secondary{
-  background: transparent;
-  border: 1px solid #ffba00;
-  color: #000;
-}
-.jeep .btn-secondary:active, .jeep .btn-secondary:not([disabled]):not(.disabled):active{
-  background: #edad01;
-  border: 1px solid #edad01;
-  color: #000;
-}
-.jeep .btn-secondary:hover, .jeep .btn-secondary:not([disabled]):not(.disabled):hover{
-  background: #edad01;
-  border: 1px solid #edad01;
-  color: #000;
+.jeep .btn-secondary:hover,
+.jeep .btn-secondary:not([disabled]):not(.disabled):hover {
+	background: #edad01;
+	border: 1px solid #edad01;
+	color: #000;
 }
 /* HeaderRow */
-.jeep .main-header, .jeep .btn{
-  font-family: ProximaNova;
+.jeep .main-header,
+.jeep .btn {
+	font-family: ProximaNova;
 }
 
 .jeep .colorInformationsvg circle {
-    fill : #ffba00;
+	fill: #ffba00;
 }
 
-.jeep {  width : 100% }
+.jeep {
+	width: 100%;
+}
